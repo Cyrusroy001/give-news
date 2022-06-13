@@ -4,6 +4,7 @@
   "description": "A newsletter signup app hosted in heroku, made using express with node and mailchimp API.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cyrus Roy",
