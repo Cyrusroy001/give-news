@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
-const my_key = require(__dirname + "/config.js")
 
 const app = express();
 
@@ -37,7 +36,7 @@ app.post("/", function (req, res) {
     const url = "https://us14.api.mailchimp.com/3.0/lists/c8db9b97f0";
     const options = {
         method: "POST",
-        auth: "cyrusmew:" + my_key,
+        auth: "cyrusmew:d075a73a51a90c19a1051402e0652580-us14",
     };
 
     const request = https.request(url, options, function (response) {
